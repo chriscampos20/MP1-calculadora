@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-
-<!--solo funciona para que el contenido tenga sentido 
-NADA DE STYLE ESPECIAL -->
 <html lang="en">
 <head>
     <title>Calculadora</title>
@@ -11,43 +8,40 @@ NADA DE STYLE ESPECIAL -->
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>
-        MP1 Calculadora Lenovo
-    </h1>
-    <p> <span style="color:rgb(3, 3, 87)">Calculadora online free 
-    </span></p>
+    <h1>MP1 Calculadora Lenovo</h1>
+    <p><span style="color:rgb(3, 3, 87)">Calculadora online free</span></p>
     <hr>
-    <form> <!-- entradas de datos-->
-            <!--revisar el min 46:00 a 50:00-->
-        <div> 
+    <form>
+        <div>
             <label>Lenovo</label>
             <br>
-            <input/>
+            <input id="display" type="text" readonly/>
             <br>
-            <button type="reset">C</button><!--funcionalidades con js-->
-            <button type="button">/</button>
-            <button type="button">X</button>
-            <button type="reset"><-</button>
+            <button type="button" id="ac">C</button>
+            <button type="button" id="/">/</button>
+            <button type="button" id="*">X</button>
+            <button type="button" id="de">←</button>
             <br>
-            <button type="button">7</button><!--funcionalidades con js-->
-            <button type="button">8</button>
-            <button type="button">9</button>
-            <button type="button">-</button>
+            <button type="button" id="7">7</button>
+            <button type="button" id="8">8</button>
+            <button type="button" id="9">9</button>
+            <button type="button" id="-">-</button>
             <br>
-            <button type="button">4</button><!--funcionalidades con js-->
-            <button type="button">5</button>
-            <button type="button">6</button>
-            <button type="button">+</button>
+            <button type="button" id="4">4</button>
+            <button type="button" id="5">5</button>
+            <button type="button" id="6">6</button>
+            <button type="button" id="+">+</button>
             <br>
-            <button type="button">1</button><!--funcionalidades con js-->
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button">=</button>
+            <button type="button" id="1">1</button>
+            <button type="button" id="2">2</button>
+            <button type="button" id="3">3</button>
+            <button type="button" id="=">=</button>
             <br>
-            <button type="buton">%</button><!--funcionalidades con js-->
-            <button type="button">0</button>
-            <button type="button">.</button>
+            <button type="button" id="%">%</button>
+            <button type="button" id="0">0</button>
+            <button type="button" id=".">.</button>
         </div>
     </form>
+    <script src="app.js"></script>
 </body>
 </html>
